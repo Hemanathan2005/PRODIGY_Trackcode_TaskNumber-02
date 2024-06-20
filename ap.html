@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="style.css">
+<script src="app.js"> </script>
+<html>
+<head>
+<title>
+    Number guessing game
+</title>
+
+
+
+</head>
+
+<body>
+<div class="one">
+    <h1> Welcome to Number Guessing Game</h1>
+</div>
+<div class="two">
+    <h2> User Information</h2>
+    <h3 id="five"> Name</h3>
+     <form>
+        <div class="lab">
+            <label> Name</label>
+            <input id="name">
+        </div>
+     </form>
+     <button onclick="update()">CLICK</button>    
+     <a href="file:///C:/Users/Hemanathan/Desktop/javascript/hello.html"><button> ENTER</button></a>
+
+</div>
+<script> 
+    var names = document.getElementById("name")
+    var users = document.getElementById("five")
+    function update(){
+        users.textContent = names.value
+    }
+    </script>
+</body>
+
+</html>
